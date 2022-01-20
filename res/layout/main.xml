@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <org.anddev.andengine.opengl.view.RenderSurfaceView
+        android:id="@+id/xmllayoutexample_rendersurfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        />    
+    <!--  IF ADMOB is not serving ads to you, 
+    	  it is because there is no inventroy for your app yet.
+    	  just remove the line  
+    	  "ads:adUnitId="put Your Publisher Code Here"  (line 24)
+    	  It will display an error message where the admob ad would be.
+    	  you can use that for placement
+    -->
+	<!--  <com.google.ads.AdView android:id="@+id/adView"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignLeft="@id/xmllayoutexample_rendersurfaceview"
+                          
+                           ads:adSize="BANNER" 
+                           
+                        
+                                  ads:adUnitId="a14f4668bf8505d"
+                           ads:loadAdOnCreate="true"/>
+	-->
+	 <com.google.ads.AdView android:id="@+id/adView"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignBottom="@id/xmllayoutexample_rendersurfaceview"
+                           android:layout_centerHorizontal="true"
+                    
+                           ads:adSize="BANNER" 
+                           ads:loadAdOnCreate="true"/>
+         -->
+</RelativeLayout>
